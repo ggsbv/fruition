@@ -1,15 +1,13 @@
 function cheapestOranges(objectList){
   var cheapestPrice = 0;
-  var cheapestSeller = "";
-  for (var shop in objectList){
-    var currentObject = objectList[shop];
-    if(currentObject['oranges'] !== undefined){
-      var orangePrice = currentObject['oranges'];
-      if(orangePrice < cheapestPrice || cheapestPrice === 0){
-        cheapestPrice = orangePrice;
-        cheapestSeller = shop;
-      }
-    };
-  };
-  return cheapestSeller;
-};
+  var cheapestShop = "";
+  for(var shop in objectList){
+    var currentShop = objectList[shop];
+    var currentPrice = currentShop['oranges'];
+    if(currentPrice < cheapestPrice || cheapestPrice === 0){
+      cheapestPrice = currentPrice;
+      cheapestShop = shop;
+    }
+  }
+  return cheapestShop;
+}

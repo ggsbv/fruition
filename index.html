@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Best Deals</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
     <script src="tests/data.json" charset="utf-8"></script>
-    <title>Fruition</title>
   </head>
   <body>
     <div id="mocha"></div>
@@ -16,16 +16,14 @@
       //ensure the assert function is available
       var assert = chai.assert;
     </script>
-    <!-- Functions !-->
-      <script src="cheapestOranges.js"></script>
-      <script src="applesAscending.js"></script>
-      <script src="applesDescending.js"></script>
-      <script src="cheapestFruit.js"></script>
-    <!-- Tests !-->
-      <script src="tests/cheapestOranges.test.js"></script>
-      <script src="tests/applesAscending.test.js"></script>
-      <script src="tests/applesDescending.test.js"></script>
-      <script src="tests/cheapestFruit.test.js"></script>
+    <!-- functions !-->
+    <script src="cheapestOranges.js"></script>
+    <script src="applesAscending.js"></script>
+    <script src="applesDescending.js"></script>
+    <!-- tests !-->
+    <script src="tests/cheapestOranges.test.js"></script>
+    <script src="tests/applesAscending.test.js"></script>
+    <script src="tests/applesDescending.test.js"></script>
     <script>
     //configure and run mocha
     mocha.checkLeaks();

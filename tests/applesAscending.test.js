@@ -4,8 +4,9 @@ const expectedResult = {
   kwakspar : 4,
   chockers : 5
 };
-describe('function applesAscending', function(){
-  it('should return object list stored in expectedResult var', function(){
+
+describe("function applesAscending", function(){
+  it("should return what is stored in expectedResult", function(){
     assert.deepEqual(expectedResult, applesAscending(data));
   });
 });
